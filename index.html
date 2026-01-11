@@ -87,6 +87,12 @@
         <ul>
             <li>Cihaz bilgileri (hata bildirme, soru bildirme işlemi sırasında)</li>
             <li>Reklam kimlik bilgileri (anonim, Google AdMob tarafından)</li>
+            <li>Satın alma bilgileri (purchase token, order ID, satın alma zamanı)
+                <ul>
+                    <li>Premium üyelik satın alımlarının doğrulanması ve yönetimi için kullanılır</li>
+                    <li>Bu bilgiler kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz)</li>
+                </ul>
+            </li>
         </ul>
         <p>Sınav sonuçlarınız ve ilerleme verileriniz sadece cihazınızda saklanır, hiçbir şekilde toplanmaz.</p>
 
@@ -95,11 +101,19 @@
         <ul>
             <li>Cihaz bilgileri: Hata raporlarını analiz etmek ve uygulamayı iyileştirmek</li>
             <li>Reklam kimlik bilgileri: Kişiselleştirilmiş reklamlar göstermek</li>
+            <li>Satın alma bilgileri: Premium üyelik durumunun doğrulanması, yönetimi ve iade kontrolü</li>
         </ul>
         <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde işlenmez.</p>
 
         <h2>4. Veri Paylaşımı</h2>
-        <p>Kişisel verilerinizi üçüncü taraflarla paylaşmayız. Sınav sonuçlarınız sadece cihazınızda saklanır. Sadece Google AdMob reklam kimlik bilgilerinizi (anonim) toplayabilir.</p>
+        <p>Kişisel verilerinizi üçüncü taraflarla paylaşmayız. Sınav sonuçlarınız sadece cihazınızda saklanır.</p>
+        <p>Paylaşılan veriler:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Reklam kimlik bilgileri (anonim) toplanabilir</li>
+            <li><strong>Supabase:</strong> Satın alma bilgileri (purchase token, order ID) doğrulama ve yönetim amacıyla saklanır</li>
+            <li><strong>Google Play Developer API:</strong> Satın almaların doğrulanması için kullanılır</li>
+        </ul>
+        <p>Satın alma bilgileri kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz).</p>
 
         <h2>5. Veri Güvenliği</h2>
         <p>Verilerinizin güvenliği bizim için önemlidir. Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde dışarıya gönderilmez. Uygulamayı sildiğinizde tüm verileriniz otomatik olarak silinir. Premium üyeliğiniz ise Google Play Store/App Store'da saklandığı için yeniden indirdiğinizde devam eder.</p>
@@ -108,10 +122,22 @@
         <p>Uygulamamız reklam ve analitik amaçlı çerezler kullanabilir. Bu çerezler kişisel kimliğinizi belirlemez ve anonim istatistiksel veriler toplar.</p>
 
         <h2>7. Üçüncü Taraf Hizmetleri</h2>
-        <p>Uygulamamız sadece Google AdMob reklam hizmetini kullanır. Bu hizmetin kendi gizlilik politikası vardır.</p>
+        <p>Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Reklam hizmeti (kendi gizlilik politikası vardır)</li>
+            <li><strong>Supabase:</strong> Satın alma verilerinin saklanması ve yönetimi (kendi gizlilik politikası vardır)</li>
+            <li><strong>Google Play Developer API:</strong> Satın almaların doğrulanması (Google'ın gizlilik politikası geçerlidir)</li>
+        </ul>
+        <p>Bu hizmetlerin kendi gizlilik politikaları vardır ve verilerinizi kendi politikalarına göre işlerler.</p>
 
         <h2>8. Veri Saklama</h2>
-        <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde sunucuya gönderilmez. Uygulamayı sildiğinizde, tüm verileriniz otomatik olarak silinir. Hata raporları sadece hata bildirme, soru bildirme işlemi sırasında toplanır.</p>
+        <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde sunucuya gönderilmez. Uygulamayı sildiğinizde, cihazınızdaki tüm verileriniz otomatik olarak silinir.</p>
+        <p>Sunucuda saklanan veriler:</p>
+        <ul>
+            <li>Satın alma bilgileri (purchase token, order ID) premium üyelik durumunun yönetimi için Supabase sunucularında saklanır</li>
+            <li>Bu bilgiler kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz)</li>
+        </ul>
+        <p>Hata raporları sadece hata bildirme, soru bildirme işlemi sırasında toplanır.</p>
 
         <h2>9. Kullanıcı Hakları</h2>
         <p>Verilerinizle ilgili haklarınız:</p>
@@ -132,8 +158,9 @@
         </div>
 
         <div class="update-date">
-            <p><strong>Son güncelleme: 1 Ocak 2026</strong></p>
+            <p><strong>Son güncelleme: 11 Ocak 2026</strong></p>
         </div>
     </div>
 </body>
 </html>
+
