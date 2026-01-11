@@ -85,76 +85,37 @@
         <h2>2. Toplanan Bilgiler</h2>
         <p>Uygulamamız aşağıdaki bilgileri toplar:</p>
         <ul>
-            <li>Cihaz bilgileri (hata bildirme, soru bildirme işlemi sırasında)</li>
-            <li>Reklam kimlik bilgileri (anonim, Google AdMob tarafından)</li>
-            <li>Satın alma bilgileri (purchase token, order ID, satın alma zamanı)
-                <ul>
-                    <li>Premium üyelik satın alımlarının doğrulanması ve yönetimi için kullanılır</li>
-                    <li>Bu bilgiler kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz)</li>
-                </ul>
-            </li>
+            <li>Hata bildirimi ve soru bildirimi sırasında kullanıcının yazdığı açıklamalar (isteğe bağlı olarak e-posta ve telefon numarası)</li>
+            <li>Satın alma bilgileri (purchase token, order ID, satın alma zamanı) - Premium üyelik yönetimi için</li>
         </ul>
         <p>Sınav sonuçlarınız ve ilerleme verileriniz sadece cihazınızda saklanır, hiçbir şekilde toplanmaz.</p>
 
-        <h2>3. Bilgilerin Kullanımı</h2>
-        <p>Toplanan bilgiler şu amaçlarla kullanılır:</p>
-        <ul>
-            <li>Cihaz bilgileri: Hata raporlarını analiz etmek ve uygulamayı iyileştirmek</li>
-            <li>Reklam kimlik bilgileri: Kişiselleştirilmiş reklamlar göstermek</li>
-            <li>Satın alma bilgileri: Premium üyelik durumunun doğrulanması, yönetimi ve iade kontrolü</li>
-        </ul>
-        <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde işlenmez.</p>
-
-        <h2>4. Veri Paylaşımı</h2>
-        <p>Kişisel verilerinizi üçüncü taraflarla paylaşmayız. Sınav sonuçlarınız sadece cihazınızda saklanır.</p>
-        <p>Paylaşılan veriler:</p>
-        <ul>
-            <li><strong>Google AdMob:</strong> Reklam kimlik bilgileri (anonim) toplanabilir</li>
-            <li><strong>Supabase:</strong> Satın alma bilgileri (purchase token, order ID) doğrulama ve yönetim amacıyla saklanır</li>
-            <li><strong>Google Play Developer API:</strong> Satın almaların doğrulanması için kullanılır</li>
-        </ul>
-        <p>Satın alma bilgileri kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz).</p>
-
-        <h2>5. Veri Güvenliği</h2>
-        <p>Verilerinizin güvenliği bizim için önemlidir. Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde dışarıya gönderilmez. Uygulamayı sildiğinizde tüm verileriniz otomatik olarak silinir. Premium üyeliğiniz ise Google Play Store/App Store'da saklandığı için yeniden indirdiğinizde devam eder.</p>
-
-        <h2>6. Çerezler ve Takip</h2>
-        <p>Uygulamamız reklam ve analitik amaçlı çerezler kullanabilir. Bu çerezler kişisel kimliğinizi belirlemez ve anonim istatistiksel veriler toplar.</p>
-
-        <h2>7. Üçüncü Taraf Hizmetleri</h2>
+        <h2>3. Üçüncü Taraf Hizmetleri</h2>
         <p>Uygulamamız aşağıdaki üçüncü taraf hizmetlerini kullanır:</p>
         <ul>
-            <li><strong>Google AdMob:</strong> Reklam hizmeti (kendi gizlilik politikası vardır)</li>
-            <li><strong>Supabase:</strong> Satın alma verilerinin saklanması ve yönetimi (kendi gizlilik politikası vardır)</li>
-            <li><strong>Google Play Developer API:</strong> Satın almaların doğrulanması (Google'ın gizlilik politikası geçerlidir)</li>
+            <li><strong>Google AdMob:</strong> Reklam hizmeti (kendi gizlilik politikası geçerlidir)</li>
+            <li><strong>Supabase:</strong> Satın alma verilerinin saklanması ve yönetimi</li>
+            <li><strong>Google Play Developer API:</strong> Satın almaların doğrulanması</li>
         </ul>
-        <p>Bu hizmetlerin kendi gizlilik politikaları vardır ve verilerinizi kendi politikalarına göre işlerler.</p>
+        <p>Bu hizmetlerin kendi gizlilik politikaları vardır.</p>
 
-        <h2>8. Veri Saklama</h2>
-        <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde sunucuya gönderilmez. Uygulamayı sildiğinizde, cihazınızdaki tüm verileriniz otomatik olarak silinir.</p>
-        <p>Sunucuda saklanan veriler:</p>
-        <ul>
-            <li>Satın alma bilgileri (purchase token, order ID) premium üyelik durumunun yönetimi için Supabase sunucularında saklanır</li>
-            <li>Bu bilgiler kişisel kimliğinizi belirlemez (e-posta veya kullanıcı adı toplanmaz)</li>
-        </ul>
-        <p>Hata raporları sadece hata bildirme, soru bildirme işlemi sırasında toplanır.</p>
+        <h2>4. Veri Güvenliği</h2>
+        <p>Verilerinizin güvenliği bizim için önemlidir. Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde dışarıya gönderilmez. Uygulamayı sildiğinizde cihazınızdaki tüm verileriniz otomatik olarak silinir. Premium üyeliğiniz ise Google Play Store'da saklandığı için yeniden indirdiğinizde devam eder.</p>
 
-        <h2>9. Kullanıcı Hakları</h2>
-        <p>Verilerinizle ilgili haklarınız:</p>
-        <ul>
-            <li>Verilerinize erişim hakkı</li>
-            <li>Verilerinizi silme hakkı (uygulamayı silerek)</li>
-            <li>Veri toplamayı reddetme hakkı (uygulamayı kullanmayarak)</li>
-        </ul>
-        <p>Sınav sonuçlarınız sadece cihazınızda saklandığı için, uygulamayı sildiğinizde tüm verileriniz otomatik olarak silinir.</p>
+        <h2>5. Veri Saklama</h2>
+        <p>Sınav sonuçlarınız sadece cihazınızda saklanır ve hiçbir şekilde sunucuya gönderilmez. Satın alma bilgileri (purchase token, order ID) yasal gereklilikler ve premium üyelik yönetimi için Supabase sunucularında saklanır ve silinemez.</p>
 
-        <h2>10. Politika Değişiklikleri</h2>
-        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda uygulama içinde bildirim göndeririz.</p>
+        <h2>6. Kullanıcı Hakları</h2>
+        <p>Verilerinize erişim hakkınız vardır. Satın alma bilgileri yasal yükümlülüklerimiz nedeniyle silinemez. Diğer verileriniz için bizimle iletişime geçebilirsiniz.</p>
 
-        <h2>11. İletişim</h2>
+        <h2>7. Politika Değişiklikleri</h2>
+        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz.</p>
+
+        <h2>8. İletişim</h2>
         <div class="contact-info">
             <p><strong>Gizlilik politikamız hakkında sorularınız varsa, bizimle iletişime geçebilirsiniz:</strong></p>
             <p>E-posta: ehliyetsinavinahazirlik2025@gmail.com</p>
+            <p style="margin-top: 10px;"><strong>Önemli Not:</strong> Satın alma bilgileri (purchase token, order ID) yasal yükümlülüklerimiz ve premium üyelik hizmetinin sağlanması için zorunlu olduğundan silinemez.</p>
         </div>
 
         <div class="update-date">
@@ -163,4 +124,3 @@
     </div>
 </body>
 </html>
-
